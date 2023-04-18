@@ -1,0 +1,340 @@
+{
+	"info": {
+		"_postman_id": "ec17dad6-84db-4bf3-bcc2-dd3494d61d1d",
+		"name": "PetShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26836985"
+	},
+	"item": [
+		{
+			"name": "LoaiThuCung",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/loaithucung/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"tc2\",\r\n    \"maLoaiThuCung\":\"mtc2\",\r\n    \"tenLoaiThuCung\":\"Cho\",\r\n    \"trangThai\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/loaithucung/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"loaithucung",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/loaithucung/read?id=tc1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/loaithucung/read?id=tc1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"loaithucung",
+								"read"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "tc1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DichVu",
+			"item": [
+				{
+					"name": "http://localhost:8080/api/dichvu/create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"dv1\",\r\n    \"maDichVu\":\"mdv1\",\r\n    \"tenDichVu\":\"Dich vu 1\",\r\n    \"noiDung\":\"Cho pet an\",\r\n    \"trangThai\":true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/dichvu/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"dichvu",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/loaithucung/read?id=dv1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/dichvu/read?id=dv1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"dichvu",
+								"read"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "dv1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DatCho",
+			"item": [
+				{
+					"name": "abc",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"dc1\",\r\n    \"email\":\"thoty@gmail.com\",\r\n    \"thoiGian\": \"2018-12-10T13:49:51.141Z\",\r\n    \"canDan\":\"Khong co\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/datcho/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"datcho",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/datcho/read?id=dc1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/datcho/read?id=dc1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"datcho",
+								"read"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "dc1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:8080/api/datcho/update",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\":\"dc1\",\r\n    \"email\":\"thoty22@gmail.com\",\r\n    \"thoiGian\": \"2018-12-10T13:49:51.141Z\",\r\n    \"canDan\":\"Khong co\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/datcho/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"datcho",
+								"update"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TaiKhoanCreate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"tk3\",\r\n    \"name\":\"thanhtuan\",\r\n    \"email\":\"thanhtuan@gmail.com\",\r\n    \"password\":\"123\",\r\n    \"dienThoai\":\"094513\",\r\n    \"roles\":[\"CUSTOMER\"],\r\n    \"trangThai\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/taikhoan/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taikhoan",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TaiKhoanRead",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/taikhoan/read?tkId=tk1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taikhoan",
+						"read"
+					],
+					"query": [
+						{
+							"key": "tkId",
+							"value": "tk1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TaiKhoanUpdate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"tk3\",\r\n    \"name\":\"thanhtuan2\",\r\n    \"email\":\"thanhtuan@gmail.com\",\r\n    \"password\":\"123\",\r\n    \"dienThoai\":\"094513\",\r\n    \"roles\":[\"CUSTOMER\"],\r\n    \"trangThai\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/taikhoan/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taikhoan",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TaiKhoandelete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/taikhoan/delete?tkId=tk3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"taikhoan",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "tkId",
+							"value": "tk3"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
